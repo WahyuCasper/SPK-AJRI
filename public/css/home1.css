@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #03346e;
+    color: white;
+    padding-right: 80px;
+}
+
+.header-nav a {
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #6eacda;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url("aset/bantuan.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2, 21, 38, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #e2e2b6;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Features Section */
+.features-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    color: #021526;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #03346e;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #021526;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #03346e;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e2e2b6;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6eacda;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}

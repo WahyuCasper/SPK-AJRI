@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #03346e;
+    color: white;
+    padding-right: 80px;
+}
+
+.header-nav a {
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #6eacda;
+}
+
+.content-section {
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    color: #03346e;
+}
+
+.submenu {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.submenu-item {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #03346e;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-item:hover {
+    background-color: #6eacda;
+}
+
+/* Table Styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #03346e;
+    color: white;
+}
+
+.btn-normalisasi:hover {
+    background-color: #6eacda;
+}
+
+.btn-normalisasi {
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background-color: #03346e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.btm-analisis-saw {
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background-color: #03346e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.btm-analisis-saw:hover {
+    background-color: #6eacda;
+}
+
+.wrap-btn-saw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #03346e;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e2e2b6;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6eacda;
+}

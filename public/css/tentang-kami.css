@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #03346e;
+    color: white;
+    padding-right: 80px;
+}
+
+.header-nav a {
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #6eacda;
+}
+
+.content-section {
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    color: #03346e;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 2rem;
+    text-align: center;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #021526;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around; /* Spasi antar member */
+    align-items: center; /* Pusatkan vertikal */
+    flex-wrap: nowrap; /* Mencegah elemen membungkus */
+    overflow-x: auto; /* Tambahkan scrollbar horizontal jika elemen melampaui lebar layar */
+    gap: 1.5rem; /* Tambahkan spasi antar elemen */
+}
+
+.team-member {
+    /* flex: 0 0 auto; Elemen tetap dalam ukuran asli */
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.team-icon {
+    font-size: 3rem;
+    color: #03346e;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #021526;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #03346e;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e2e2b6;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6eacda;
+}

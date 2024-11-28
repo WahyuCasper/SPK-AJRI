@@ -1,0 +1,369 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-logo {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #03346e;
+    color: white;
+    padding-right: 80px;
+}
+
+.header-nav a {
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #6eacda;
+}
+
+.content-section {
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    color: #03346e;
+}
+
+.submenu {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.submenu-item {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #03346e;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-item:hover {
+    background-color: #6eacda;
+}
+
+/* Table Styles */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.data-table th,
+.data-table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #03346e;
+    color: white;
+}
+
+/* Form Styles */
+.data-form,
+.upload-form {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-form label,
+.upload-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.data-form input,
+.upload-form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.data-form button,
+.upload-form button {
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background-color: #03346e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.data-form button:hover,
+.upload-form button:hover {
+    background-color: #6eacda;
+}
+
+.actions-cell {
+    display: flex; /* Mengatur flexbox */
+    gap: 10px; /* Memberi jarak antar elemen */
+    align-items: center; /* Menjaga elemen tetap sejajar secara vertikal */
+    justify-content: center;
+}
+
+/* Gaya Umum Tombol */
+button.btn-delet,
+button.btn-edit {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* Jarak antara teks dan ikon */
+}
+
+/* Tombol Edit */
+button.btn-edit {
+    background-color: #28a745; /* Warna hijau */
+    color: white;
+}
+
+button.btn-edit:hover {
+    background-color: #218838; /* Hijau gelap */
+    box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.2); /* Efek bayangan */
+}
+
+/* Tombol Hapus */
+button.btn-delet {
+    background-color: #dc3545; /* Warna merah */
+    color: white;
+}
+
+button.btn-delet:hover {
+    background-color: #c82333; /* Merah gelap */
+    box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.2); /* Efek bayangan */
+}
+
+/* Ikon dalam tombol */
+button.btn-delet i,
+button.btn-edit i {
+    font-size: 14px;
+}
+
+/* Fokus pada tombol */
+button.btn-delet:focus,
+button.btn-edit:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+    outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #03346e;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e2e2b6;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6eacda;
+}
+
+/* Tombol Hapus */
+button.btn-delet1 {
+    background-color: #dc3545; /* Warna merah */
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* Jarak antara teks dan ikon */
+}
+
+button.btn-delet1:hover {
+    background-color: #c82333; /* Merah gelap */
+    box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.2); /* Efek bayangan */
+}
+
+button.btn-delet1 i {
+    font-size: 18px;
+}
+
+/* Modal Container */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Untuk scroll jika konten lebih besar dari tinggi layar */
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang transparan */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* Center modal secara vertikal dan horizontal */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Ukuran lebar modal */
+    max-width: 500px; /* Batas maksimum lebar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Animasi Modal */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.modal-content .close {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-content .close:hover {
+    color: #333;
+}
+
+/* Header Modal */
+.modal-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Form Elements */
+.modal-content .form-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.modal-content .form-control {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal-content .form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.modal-content button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%; /* Tombol selebar form */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.wrap-btn-saw {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.a-saw:hover {
+    background-color: #6eacda;
+}
+.a-saw {
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background-color: #03346e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Lebar lebih kecil untuk layar kecil */
+        margin: 15% auto;
+    }
+}
